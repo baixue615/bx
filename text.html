@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+			function bx() {
+				var te_val = $("#text").val().length;
+				if (te_val > 60) {
+					 
+					$("#but").attr("disabled", true);
+				} else { 
+					$("#but").attr("disabled", false);
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<textarea name="textarea" id="text" cols="45" rows="10" onkeyup="bx();"></textarea>
+		<button id="but">提交</button>
+	</body>
+
+</html>
